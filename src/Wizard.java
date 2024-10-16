@@ -2,13 +2,16 @@ public class Wizard extends Entity
 {
     // VARIABLES
     private int mana;
-//    private Staff staff;
+    private Staff staff;
 
     // CONSTRUCTORS
-//    public void Wizard(int health, int money, boolean alive, int mana)
-//    {
-//
-//    }
+    public Wizard(int health, int money, boolean alive, int mana, Staff staff)
+    {
+        super(health, money, alive);
+
+        this.mana = mana;
+        this.staff = staff;
+    }
 
     // SETTERS
 
