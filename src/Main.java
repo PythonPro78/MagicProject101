@@ -42,5 +42,17 @@ public class Main
 
         System.out.println(musicGuy);
         System.out.println();
+
+        Orc bigGuy = new Orc(90, 45, 7, 7);
+
+        System.out.println(bigGuy);
+        System.out.println();
+
+        bigGuy.attack(gandalf, 15);
+        System.out.println("Attack");
+        System.out.println();
+
+        System.out.println(gandalf);
+        System.out.println();
     }
 }

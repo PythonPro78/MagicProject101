@@ -81,13 +81,12 @@ public class Orc extends Entity
 
     @Override
     public String toString() {
-        return "Bard{" +
-                "mana=" + mana +
-                ", bac=" + bac +
+        return "Orc{" +
+                "dt=" + dt +
+                ", weaponBst=" + weaponBst +
                 ", health=" + health +
                 ", money=" + money +
                 ", alive=" + alive +
-                ", canDrive=" + canDrive() +
                 '}';
     }
 }
