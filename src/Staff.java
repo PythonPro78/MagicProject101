@@ -1,6 +1,8 @@
 public class Staff
 {
     // VARIABLES
+    private float booster;
+
     private int minMana;
     private int maxMana;
     private String brand;
@@ -11,6 +13,8 @@ public class Staff
         this.minMana = minMana;
         this.maxMana = maxMana;
         this.brand = brand;
+
+        booster = 1.0f;
     }
 
     public Staff(int minMana, int maxMana)
@@ -19,6 +23,8 @@ public class Staff
         this.maxMana = maxMana;
 
         brand = "";
+
+        booster = 1.0f;
     }
 
     public Staff()
@@ -26,6 +32,8 @@ public class Staff
         minMana = 0;
         maxMana = Integer.MAX_VALUE;
         brand = "";
+
+        booster = 1.0f;
     }
 
     // SETTERS
