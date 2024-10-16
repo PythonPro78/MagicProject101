@@ -14,4 +14,33 @@ public class Entity
         this.money = money;
         this.alive = alive;
     }
+
+    public Entity(int health, int money)
+    {
+        numEntities ++;
+
+        this.health = health;
+        this.money = money;
+
+        alive = true;
+    }
+
+    public Entity(int health)
+    {
+        numEntities ++;
+
+        this.health = health;
+
+        money = 0;
+        alive = true;
+    }
+
+    public Entity()
+    {
+        numEntities ++;
+
+        health = 10;
+        money = 0;
+        alive = true;
+    }
 }
