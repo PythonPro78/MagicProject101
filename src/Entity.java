@@ -106,4 +106,13 @@ public class Entity
     }
 
     // BRAIN METHODS
+
+    @Override
+    public String toString()
+    {
+        return "Entity:" +
+                "\nHealth:" + health +
+                "\nMoney:" + money +
+                "\nAlive:" + alive;
+    }
 }
