@@ -47,6 +47,42 @@ public class Entity
     }
 
     // SETTERS
+    public void setHealth(int health)
+    {
+        this.health = health;
+
+        if (this.health <= 0)
+        {
+            this.health = 0;
+            alive = false;
+        }
+    }
+
+    public void changeHealth(int change)
+    {
+        health += change;
+
+        if (health <= 0)
+        {
+            health = 0;
+            alive = false;
+        }
+    }
+
+    public void setMoney(int money)
+    {
+        this.money = money;
+    }
+
+    public void changeMoney(int change)
+    {
+        money = change;
+    }
+
+    public void setAlive(boolean alive)
+    {
+        this.alive = alive;
+    }
 
     // GETTERS
 
