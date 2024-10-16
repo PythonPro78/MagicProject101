@@ -13,6 +13,21 @@ public class Staff
         this.brand = brand;
     }
 
+    public Staff(int minMana, int maxMana)
+    {
+        this.minMana = minMana;
+        this.maxMana = maxMana;
+
+        brand = "";
+    }
+
+    public Staff()
+    {
+        minMana = 0;
+        maxMana = Integer.MAX_VALUE;
+        brand = "";
+    }
+
     // SETTERS
 
     // GETTERS
