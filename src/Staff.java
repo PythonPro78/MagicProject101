@@ -68,7 +68,7 @@ public class Staff
     }
 
     public double boost(int mana, int value)
-    {
+    {f
         if (!checkMana(mana)) return value;
 
         return value * (1 + mana/10.0);
