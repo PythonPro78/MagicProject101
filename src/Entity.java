@@ -106,7 +106,6 @@ public class Entity
     }
 
     // BRAIN METHODS
-
     @Override
     public String toString()
     {
