@@ -1,7 +1,7 @@
 public class Bard extends Entity
 {
     // VARIABLES
-    public static double MAX_LEGAL_BAC = 0.08;
+    public static final double MAX_LEGAL_BAC = 0.08;
 
     private int mana;
     private double bac;
@@ -54,9 +54,17 @@ public class Bard extends Entity
             mana = 0;
     }
 
-    public void setStaff(double bac)
+    public void setBac(double bac)
     {
         this.bac = bac;
+    }
+
+    public void changeBac(double change)
+    {
+        bac += change;
+
+        if (bac < 0)
+            bac = 0;
     }
 
     // GETTERS
@@ -65,7 +73,7 @@ public class Bard extends Entity
         return mana;
     }
 
-    public double getStaff()
+    public double getBac()
     {
         return bac;
     }
@@ -87,12 +95,13 @@ public class Bard extends Entity
 
     @Override
     public String toString() {
-        return "Wizard{" +
+        return "Bard{" +
                 "mana=" + mana +
                 ", bac=" + bac +
                 ", health=" + health +
                 ", money=" + money +
                 ", alive=" + alive +
+                ", canDrive=" + canDrive() +
                 '}';
     }
 }

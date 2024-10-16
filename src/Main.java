@@ -29,5 +29,18 @@ public class Main
 
         System.out.println(gandalf);   
         System.out.println(dumboldore);
+        System.out.println();
+
+        Bard musicGuy = new Bard(25, 5, 130, 0.1);
+
+        System.out.println(musicGuy);
+        System.out.println();
+
+        musicGuy.changeBac(0.9);
+        System.out.println("Night out");
+        System.out.println();
+
+        System.out.println(musicGuy);
+        System.out.println();
     }
 }
