@@ -77,6 +77,13 @@ public class Wizard extends Entity
         attack(target, (int) staff.boost(mana, damage));
     }
 
+    public void tradeStaff(Staff newStaff, Wizard other)
+    {
+        Staff temp = newStaff;
+        staff = newStaff;
+        other.setStaff(temp);
+    }
+
     @Override
     public String toString() {
         return "Wizard{" +
