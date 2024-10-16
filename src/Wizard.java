@@ -36,8 +36,29 @@ public class Wizard extends Entity
     }
 
     // SETTERS
+    public void setMana(int mana)
+    {
+        this.mana = mana;
+
+        if (this.mana < 0)
+            this.mana = 0;
+    }
+
+    public void changeMana(int change)
+    {
+        mana += change;
+
+        if (mana < 0)
+            mana = 0;
+    }
+
+    public void setStaff(Staff staff)
+    {
+        this.staff = staff;
+    }
 
     // GETTERS
+
 
     // BRAIN METHODS
 }
