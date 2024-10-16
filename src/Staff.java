@@ -67,6 +67,13 @@ public class Staff
         return minMana <= mana && mana <= maxMana;
     }
 
+    public double boost(int mana, int value)
+    {
+        if (!checkMana(mana)) return value;
+
+        return value * (1 + mana/10.0);
+    }
+
     @Override
     public String toString() {
         return "Staff{" +
