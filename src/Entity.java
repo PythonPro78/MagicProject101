@@ -1,11 +1,13 @@
 public class Entity
 {
+    // VARIABLES
     private static int numEntities;
 
     private int health;
     private int money;
     private boolean alive;
 
+    // CONSTRUCTORS
     public Entity(int health, int money, boolean alive)
     {
         numEntities ++;
@@ -43,4 +45,10 @@ public class Entity
         money = 0;
         alive = true;
     }
+
+    // SETTERS
+
+    // GETTERS
+
+    // BRAIN METHODS
 }
