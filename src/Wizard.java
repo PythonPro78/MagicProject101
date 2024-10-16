@@ -31,8 +31,6 @@ public class Wizard extends Entity
 
     public Wizard()
     {
-        super();
-
         mana = 0;
         staff = null;
     }
