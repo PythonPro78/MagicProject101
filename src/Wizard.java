@@ -58,7 +58,15 @@ public class Wizard extends Entity
     }
 
     // GETTERS
+    public int getMana()
+    {
+        return mana;
+    }
 
+    public Staff getStaff()
+    {
+        return staff;
+    }
 
     // BRAIN METHODS
 }
