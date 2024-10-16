@@ -3,9 +3,9 @@ public class Entity
     // VARIABLES
     private static int numEntities;
 
-    private int health;
-    private int money;
-    private boolean alive;
+    protected int health;
+    protected int money;
+    protected boolean alive;
 
     // CONSTRUCTORS
     public Entity(int health, int money, boolean alive)
