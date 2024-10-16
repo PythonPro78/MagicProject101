@@ -62,6 +62,10 @@ public class Staff
     }
 
     // BRAIN METHODS
+    public boolean checkMana(int mana)
+    {
+        return minMana <= mana && mana <= maxMana;
+    }
 
     @Override
     public String toString() {
