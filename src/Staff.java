@@ -46,5 +46,20 @@ public class Staff
 
     // GETTERS
 
+    public int getMinMana()
+    {
+        return minMana;
+    }
+
+    public int getMaxMana()
+    {
+        return maxMana;
+    }
+
+    public String getBrand()
+    {
+        return brand;
+    }
+
     // BRAIN METHODS
 }
