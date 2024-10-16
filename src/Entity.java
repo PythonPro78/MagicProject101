@@ -109,6 +109,12 @@ public class Entity
     public void attack(Entity target, int damage)
     {
         target.changeHealth(-damage);
+        target.wasAttacked(damage);
+    }
+
+    public void wasAttacked(int damage)
+    {
+
     }
 
     @Override
