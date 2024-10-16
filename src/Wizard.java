@@ -69,6 +69,14 @@ public class Wizard extends Entity
     }
 
     // BRAIN METHODS
+    public void boostedAttack(Entity target, int damage, int mana)
+    {
+        if (staff == null)
+            attack(target, damage);
+
+        attack(target, (int) staff.boost(mana, damage));
+    }
+
     @Override
     public String toString() {
         return "Wizard{" +
