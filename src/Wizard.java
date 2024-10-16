@@ -13,6 +13,30 @@ public class Wizard extends Entity
         this.staff = staff;
     }
 
+    public Wizard(int health, int money, int mana, Staff staff)
+    {
+        super(health, money);
+
+        this.mana = mana;
+        this.staff = staff;
+    }
+
+    public Wizard(int health)
+    {
+        super(health);
+
+        mana = 0;
+        staff = null;
+    }
+
+    public Wizard()
+    {
+        super();
+
+        mana = 0;
+        staff = null;
+    }
+
     // SETTERS
 
     // GETTERS
