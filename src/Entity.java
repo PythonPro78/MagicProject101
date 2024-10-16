@@ -85,6 +85,25 @@ public class Entity
     }
 
     // GETTERS
+    public int getHealth()
+    {
+        return health;
+    }
+
+    public int getMoney()
+    {
+        return money;
+    }
+
+    public boolean isAlive()
+    {
+        return alive;
+    }
+
+    public static int getNumEntities()
+    {
+        return numEntities;
+    }
 
     // BRAIN METHODS
 }
