@@ -62,4 +62,13 @@ public class Staff
     }
 
     // BRAIN METHODS
+
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "minMana=" + minMana +
+                ", maxMana=" + maxMana +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
 }
