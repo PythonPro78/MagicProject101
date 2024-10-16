@@ -69,4 +69,14 @@ public class Wizard extends Entity
     }
 
     // BRAIN METHODS
+    @Override
+    public String toString() {
+        return "Wizard{" +
+                "mana=" + mana +
+                ", staff=" + staff +
+                ", health=" + health +
+                ", money=" + money +
+                ", alive=" + alive +
+                '}';
+    }
 }

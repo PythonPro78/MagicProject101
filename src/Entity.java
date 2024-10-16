@@ -106,6 +106,11 @@ public class Entity
     }
 
     // BRAIN METHODS
+    public void attack(Entity target, int damage)
+    {
+        target.changeHealth(-damage);
+    }
+
     @Override
     public String toString() {
         return "Entity{" +
