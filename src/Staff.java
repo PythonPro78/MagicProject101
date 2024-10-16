@@ -29,6 +29,20 @@ public class Staff
     }
 
     // SETTERS
+    public void setMinMana(int minMana)
+    {
+        this.minMana = minMana;
+    }
+
+    public void setMaxMana(int maxMana)
+    {
+        this.maxMana = maxMana;
+    }
+
+    public void setBrand(String brand)
+    {
+        this.brand = brand;
+    }
 
     // GETTERS
 
